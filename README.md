@@ -4,6 +4,12 @@
   <img src="screenshots/banner.png" alt="StyleSync AI Banner" width="100%">
 </p>
 
+## 🎥 Project Demo
+
+Watch a walkthrough of StyleSync AI here:
+
+**https://drive.google.com/file/d/1kMnZZtllLn0JpIBtPaewXcXOPyWcS6cX/view?usp=sharing**
+
 ![React](https://img.shields.io/badge/React-19-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Python-green)
 ![Groq](https://img.shields.io/badge/AI-Groq%20LLaMA%203.3-orange)
