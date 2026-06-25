@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import axios from 'axios'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
-import { int, pct, formatSentences } from './utils'
+import { int, pct, formatSentences } from '../utils/formatText'
 
 const SALON_TYPES = ['Unisex Salon', 'Ladies Parlour', 'Luxury Spa', 'Hair Studio']
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']

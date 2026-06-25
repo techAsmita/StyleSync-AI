@@ -1,3 +1,5 @@
+export const int = (n) => Math.round(Number(n) || 0)
+export const pct = (n) => Math.round(Number(n) || 0)
 /**
  * formatSentences — universal AI text normaliser
  * - Sentence case (capital first letter per sentence)
