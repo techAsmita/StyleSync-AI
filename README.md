@@ -22,8 +22,8 @@ We help salons turn idle capacity into predictable revenue while helping custome
 
 | | URL |
 |---|---|
-| Frontend | https://stylesync-ai.vercel.app |
-| Backend | https://stylesync-ai-backend.onrender.com |
+| Frontend | https://style-sync-ai-chi.vercel.app |
+| Backend | https://stylesync-ai-z9g8.onrender.com |
 
 ---
 
