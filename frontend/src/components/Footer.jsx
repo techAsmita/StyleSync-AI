@@ -5,7 +5,7 @@ export default function Footer() {
   const navigate = useNavigate()
 
   return (
-    <footer style={{
+    <footer className="ss-footer" style={{
       background: 'var(--charcoal)',
       padding: '4.5rem 3rem 2.5rem',
       width: '100%',
@@ -15,7 +15,7 @@ export default function Footer() {
         maxWidth: '1100px',
         margin: '0 auto',
       }}>
-        <div style={{
+        <div className="ss-footer-grid" style={{
           display: 'grid',
           gridTemplateColumns: '2fr 1fr 1fr',
           gap: '3rem',

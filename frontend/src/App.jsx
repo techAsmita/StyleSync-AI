@@ -16,7 +16,7 @@ export default function App() {
       <div style={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh',
+        minHeight: '100dvh',
       }}>
         <ScrollToTop />
       <Navbar />

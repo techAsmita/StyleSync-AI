@@ -70,11 +70,11 @@ export default function LookTransfer() {
   ] : []
 
   return (
-    <div style={{ background: 'var(--ivory)', padding: '2rem' }}>
+    <div className="ss-page" style={{ background: 'var(--ivory)', padding: '2rem' }}>
       <div style={{ maxWidth: '860px', margin: '0 auto' }} className="fade-up">
 
         {/* Header */}
-        <div style={{ textAlign: 'center', padding: '2rem 0 2.5rem' }}>
+        <div className="ss-page-header" style={{ textAlign: 'center', padding: '2rem 0 2.5rem' }}>
           <div style={{
             fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.14em',
             color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '0.75rem',
@@ -177,7 +177,7 @@ export default function LookTransfer() {
             </div>
 
             {/* Blueprint Grid */}
-            <div style={{
+            <div className="ss-grid-2-sm" style={{
               display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
               gap: '0.75rem', marginBottom: '1rem',
             }}>

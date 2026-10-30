@@ -15,7 +15,7 @@ export default function Navbar() {
   const location = useLocation()
 
   return (
-    <nav style={{
+    <nav className="ss-nav" style={{
       position: 'sticky',
       top: 0,
       zIndex: 100,
@@ -46,7 +46,7 @@ export default function Navbar() {
       </div>
 
       {/* Tabs */}
-      <div style={{ display: 'flex', gap: '0.25rem', overflowX: 'auto' }}>
+      <div className="ss-nav-tabs" style={{ display: 'flex', gap: '0.25rem', overflowX: 'auto', minWidth: 0 }}>
         {tabs.map(tab => {
           const active = location.pathname === tab.path
           return (

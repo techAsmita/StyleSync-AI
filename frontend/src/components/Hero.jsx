@@ -11,11 +11,11 @@ export default function Hero() {
   const navigate = useNavigate()
 
   return (
-    <div style={{ background: 'var(--ivory)', minHeight: '85vh' }}>
+    <div style={{ background: 'var(--ivory)' }}>
 
       {/* HERO */}
       <div
-        className="fade-up"
+        className="fade-up ss-hero"
         style={{
           maxWidth: '1100px',
           margin: '0 auto',
@@ -23,6 +23,7 @@ export default function Hero() {
         }}
       >
         <div
+          className="ss-stack-md"
           style={{
             display: 'grid',
             gridTemplateColumns: '1.2fr 0.8fr',
@@ -84,6 +85,7 @@ export default function Hero() {
             </p>
 
             <div
+              className="ss-hero-ctas"
               style={{
                 display: 'flex',
                 gap: '1rem',
@@ -254,6 +256,7 @@ export default function Hero() {
 
       {/* STATS */}
       <div
+        className="ss-stack-sm ss-hero-stats"
         style={{
           maxWidth: '1100px',
           margin: '0 auto',
@@ -299,6 +302,7 @@ export default function Hero() {
 
       {/* PROBLEM */}
       <div
+        className="ss-section"
         style={{
           background: 'var(--charcoal)',
           padding: '4rem 2rem',
@@ -344,7 +348,7 @@ export default function Hero() {
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(250px, 100%), 1fr))',
               gap: '1rem',
             }}
           >
@@ -405,6 +409,7 @@ export default function Hero() {
 
       {/* SOLUTION */}
       <div
+        className="ss-section"
         style={{
           background: 'var(--ivory)',
           padding: '4rem 2rem',

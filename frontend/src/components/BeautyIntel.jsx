@@ -89,11 +89,11 @@ export default function BeautyIntel() {
 }
 
   return (
-    <div style={{ background: 'var(--ivory)', padding: '2rem' }}>
+    <div className="ss-page" style={{ background: 'var(--ivory)', padding: '2rem' }}>
       <div style={{ maxWidth: '860px', margin: '0 auto' }} className="fade-up">
 
         {/* Header */}
-        <div style={{ textAlign: 'center', padding: '2rem 0 2.5rem' }}>
+        <div className="ss-page-header" style={{ textAlign: 'center', padding: '2rem 0 2.5rem' }}>
           <div style={{
             fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.14em',
             color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '0.75rem',
@@ -188,7 +188,7 @@ export default function BeautyIntel() {
               ✦ Beauty Intelligence AI
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+            <div className="ss-stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
 
               {/* Score Bars */}
               <div>

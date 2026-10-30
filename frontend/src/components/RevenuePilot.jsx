@@ -142,11 +142,11 @@ export default function RevenuePilot() {
   }
 
   return (
-    <div style={{ background: 'var(--ivory)', padding: '2rem' }}>
+    <div className="ss-page" style={{ background: 'var(--ivory)', padding: '2rem' }}>
       <div style={{ maxWidth: '860px', margin: '0 auto' }} className="fade-up">
 
         {/* ── Page Header ── */}
-        <div style={{ textAlign: 'center', padding: '2rem 0 2.5rem' }}>
+        <div className="ss-page-header" style={{ textAlign: 'center', padding: '2rem 0 2.5rem' }}>
           <div style={{
             fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.14em',
             color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '0.75rem',
@@ -184,7 +184,7 @@ export default function RevenuePilot() {
           }}>
             Lakshmi Beauty Studio
           </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem' }}>
+          <div className="ss-stack-sm" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem' }}>
             {[
               { val: '₹82,000',   label: 'Baseline Revenue',     up: false },
               { val: '₹1,08,000', label: 'AI Optimised Revenue', up: true  },
@@ -210,7 +210,7 @@ export default function RevenuePilot() {
         </div>
 
         {/* ── KPI Row — all from pred, updates live ── */}
-        <div style={{
+        <div className="ss-stack-sm" style={{
           display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)',
           gap: '0.75rem', marginBottom: '1rem',
         }}>
@@ -239,7 +239,7 @@ export default function RevenuePilot() {
         </div>
 
         {/* ── Two Column: Inputs + Chart ── */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '1rem', marginBottom: '1rem' }}>
+        <div className="ss-stack-md" style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '1rem', marginBottom: '1rem' }}>
 
           {/* Inputs */}
           <div style={{
@@ -341,7 +341,7 @@ export default function RevenuePilot() {
             background: 'var(--white)', border: '1px solid var(--border)',
             borderRadius: '16px', padding: '1.5rem',
           }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '0.25rem' }}>
+            <div className="ss-wrap-sm" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '0.5rem', marginBottom: '0.25rem' }}>
               <div>
                 <div style={{
                   fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.1em',
@@ -471,7 +471,7 @@ export default function RevenuePilot() {
             </div>
 
             {(result.campaigns || []).map((c, i) => (
-              <div key={i} style={{
+              <div key={i} className="ss-campaign" style={{
                 border: '1px solid var(--border)', borderRadius: '10px',
                 padding: '1rem 1.25rem', marginBottom: '0.75rem',
                 display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '1rem',
@@ -503,7 +503,7 @@ export default function RevenuePilot() {
             ))}
 
             {/* Metrics — idle_slots always from pred */}
-            <div style={{
+            <div className="ss-grid-2-sm" style={{
               borderTop: '1px solid var(--border)', paddingTop: '1.25rem', marginTop: '0.5rem',
               display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '0.75rem',
             }}>

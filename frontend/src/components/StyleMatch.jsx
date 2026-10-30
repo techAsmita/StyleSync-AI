@@ -230,11 +230,11 @@ export default function StyleMatch() {
   const offset = result ? circumference - (circumference * (animScore / 100)) : circumference
 
   return (
-    <div style={{ background: 'var(--ivory)', padding: '2rem' }}>
+    <div className="ss-page" style={{ background: 'var(--ivory)', padding: '2rem' }}>
       <div style={{ maxWidth: '860px', margin: '0 auto' }} className="fade-up">
 
         {/* Header */}
-        <div style={{ textAlign: 'center', padding: '2rem 0 2.5rem' }}>
+        <div className="ss-page-header" style={{ textAlign: 'center', padding: '2rem 0 2.5rem' }}>
           <div style={{
             fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.14em',
             color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '0.75rem',
@@ -256,7 +256,7 @@ export default function StyleMatch() {
         </div>
 
         {/* Upload Row */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
+        <div className="ss-stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginBottom: '1rem' }}>
           <UploadCard
             label="Your Selfie"
             icon="🤳"
@@ -352,7 +352,7 @@ export default function StyleMatch() {
               ✦ StyleMatch AI
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '1.5rem' }}>
+            <div className="ss-stack-sm" style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '1.5rem' }}>
 
               {/* Score Ring */}
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -434,7 +434,7 @@ export default function StyleMatch() {
               </div>
               {SALONS.map((s, i) => (
                 <div key={i} style={{
-                  display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                  display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '0.75rem',
                   padding: '0.75rem 1rem', borderRadius: '8px',
                   background: 'var(--cream)', marginBottom: '0.5rem',
                   border: '1px solid var(--border)',

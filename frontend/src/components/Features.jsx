@@ -54,11 +54,11 @@ export default function Features() {
   const navigate = useNavigate()
 
   return (
-    <div style={{ background: 'var(--ivory)', padding: '2rem' }}>
+    <div className="ss-page" style={{ background: 'var(--ivory)', padding: '2rem' }}>
       <div style={{ maxWidth: '960px', margin: '0 auto' }} className="fade-up">
 
         {/* Header */}
-        <div style={{ textAlign: 'center', padding: '2rem 0 3rem' }}>
+        <div className="ss-page-header" style={{ textAlign: 'center', padding: '2rem 0 3rem' }}>
           <div style={{
             fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.14em',
             color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '0.75rem',
@@ -84,7 +84,7 @@ export default function Features() {
 
         {/* Feature Cards */}
         {features.map((f, i) => (
-          <div key={i} style={{
+          <div key={i} className="ss-feature-card" style={{
             background: 'var(--white)', border: '1px solid var(--border)',
             borderRadius: '18px', padding: '1.75rem', marginBottom: '1rem',
             display: 'grid', gridTemplateColumns: '1fr auto',
@@ -178,12 +178,12 @@ export default function Features() {
         ))}
 
         {/* Bottom Pitch */}
-        <div style={{
+        <div className="ss-pitch" style={{
           background: 'var(--charcoal)', borderRadius: '18px',
           padding: '3rem 2rem', textAlign: 'center', marginTop: '1.5rem',
           marginBottom: '2rem',
         }}>
-          <div style={{
+          <div className="ss-pitch-title" style={{
             fontFamily: 'Playfair Display, serif',
             fontSize: '1.6rem', fontWeight: 600,
             color: 'var(--white)', marginBottom: '1rem', lineHeight: 1.4,

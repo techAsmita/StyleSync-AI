@@ -2,7 +2,11 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://stylesync-ai-z9g8.onrender.com/api/:path*"
+           "destination": "https://stylesync-ai-z9g8.onrender.com/api/:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
