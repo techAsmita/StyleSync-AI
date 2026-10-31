@@ -86,7 +86,7 @@ Interactive Dashboard + AI Results
 | Layer | Technology |
 |---|---|
 | Frontend | React + Vite |
-| Styling | Inline CSS with CSS Variables |
+| Styling | Inline CSS with CSS Variables + responsive media queries |
 | Backend | FastAPI (Python) |
 | AI | Groq — LLaMA 3.3 70B |
 | Frontend Deploy | Vercel |
@@ -163,6 +163,7 @@ StyleSync-AI/
 │   ├── src/
 │   │   ├── components/      # All page components
 │   │   └── utils/           # formatText, hashImage helpers
+│   ├── vercel.json          # API proxy + SPA routing
 │   └── package.json
 │
 └── README.md
