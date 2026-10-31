@@ -443,7 +443,7 @@ export default function StyleMatch() {
                     <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--charcoal)' }}>{s.name}</div>
                     <div style={{ fontSize: '0.75rem', color: 'var(--muted)' }}>{s.dist} · {s.spec} · ⭐ {s.rating}</div>
                   </div>
-                  <div style={{ fontWeight: 700, fontSize: '0.875rem', color: 'var(--gold-dark)' }}>{s.match}% match</div>
+                  <div style={{ fontWeight: 700, fontSize: '0.875rem', color: 'var(--gold-dark)', whiteSpace: 'nowrap' }}>{s.match}% match</div>
                 </div>
               ))}
             </div>
